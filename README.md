@@ -14,17 +14,17 @@ This project focuses on reverse engineering an APK to understand and tweak the g
 2. **Gameplay:**
    - The game screen features four directional buttons: up, right, down, and left.
    - Each button corresponds to an integer value:
-     - Up = 2
-     - Right = 1
-     - Down = 3
      - Left = 0
+     - Right = 1
+     - Up = 2
+     - Down = 3
    - The player must press the arrows in the correct order derived from their ID. Incorrect presses will result in a failure message.
 
 ### Example
 
-- **ID:** 336491865
-- **Sequence:** [3, 3, 2, 0, 1, 1, 0, 2, 1]
-  - Down, Down, Up, Left, Right, Right, Left, Up, Right
+- **ID:** 789654321
+- **Sequence:** [3, 0, 1, 2, 1, 0, 3, 2, 1]
+  - Down, Left, Right, Up, Right, Left, Down, Up, Right
 
 ## Development Process
 
@@ -38,20 +38,8 @@ This project focuses on reverse engineering an APK to understand and tweak the g
 
 3. **Code Modifications:**
    - Correct any bugs in the code (e.g., update URL).
-   - Insert debug messages to track the program flow.
-   - Set toast duration to `Toast.LENGTH_LONG` for better visibility.
 
 4. **Testing:**
-   - Enter the given ID and follow the correct sequence of arrow presses.
+   - Enter your ID and follow the correct sequence of arrow presses.
    - Confirm the toast message displays the correct city name and survival message.
 
-## Solution Steps
-
-1. **Decompile the APK and gather resources.**
-2. **Set up a new Android project and import these resources.**
-3. **Update the manifest and add necessary permissions.**
-4. **Fix bugs in the code and add debugging information.**
-5. **Run tests using the provided ID.**
-6. **Ensure the correct arrow sequence is followed to achieve the "survive" state.**
-
-By following these steps, you will successfully modify the game to work with the provided ID, allowing the user to navigate through the game correctly and achieve survival.
