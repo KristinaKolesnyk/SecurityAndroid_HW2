@@ -17,10 +17,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
-//My ID: 336491865
-//Sequence: [3, 3, 2, 0, 1, 1, 0, 2, 1]
-//Down, Down, Up, Left, Right, Right, Left, Up, Right
-//City: Ohio
+
 
 public class Activity_Menu extends AppCompatActivity {
     private MaterialButton menu_BTN_start;
