@@ -5,8 +5,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+//My ID: 336491865
+//Sequence: [3, 3, 2, 0, 1, 1, 0, 2, 1]
+//Down, Down, Up, Left, Right, Right, Left, Up, Right
+//City: Ohio
 
 public class Activity_Game extends AppCompatActivity {
     public static final String EXTRA_ID = "EXTRA_ID";
